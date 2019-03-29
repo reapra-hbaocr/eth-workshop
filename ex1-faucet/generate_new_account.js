@@ -11,6 +11,7 @@ async function create_new_account(){
     }
     let faucet_account='module.exports='+JSON.stringify(json_acc);
     console.log('faucet address: ',json_acc.address);
+    console.log('faucet prvKey: ',json_acc.privateKey);
     fs.writeFileSync(o_file,faucet_account);
 }
 create_new_account();
