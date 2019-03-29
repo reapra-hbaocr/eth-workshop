@@ -1,1 +1,0 @@
-module.exports={"address":"0xCCB066376c64c3EdeEde80FB5D6e929F80E63BB7","privateKey":"0xbf8a993e9c1e548febaaa53426509207d015ebc4da592144d5e74d0ec2000e66"}
