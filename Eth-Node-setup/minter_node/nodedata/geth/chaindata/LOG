@@ -1,0 +1,36 @@
+=============== Mar 28, 2019 (+07) ===============
+09:49:55.599855 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:49:55.600550 db@open opening
+09:49:55.602847 version@stat F·[] S·0B[] Sc·[]
+09:49:55.603111 db@janitor F·2 G·0
+09:49:55.603162 db@open done T·2.58679ms
+=============== Mar 28, 2019 (+07) ===============
+10:13:04.295552 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:13:04.296711 version@stat F·[] S·0B[] Sc·[]
+10:13:04.296741 db@open opening
+10:13:04.297912 journal@recovery F·1
+10:13:04.301361 journal@recovery recovering @1
+10:13:04.303726 memdb@flush created L0@2 N·621 S·50KiB "\x02d\xfc..\x19Ba,v429":"\xfe\x88\xcf..H\xef\xcc,v362"
+10:13:04.306697 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+10:13:04.307725 db@janitor F·3 G·0
+10:13:04.307762 db@open done T·11.007881ms
+10:14:32.873769 db@close closing
+10:14:32.873937 db@close done T·164.413µs
+=============== Mar 28, 2019 (+07) ===============
+10:32:41.939824 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:32:41.940643 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+10:32:41.940673 db@open opening
+10:32:41.940764 journal@recovery F·1
+10:32:41.944141 journal@recovery recovering @3
+10:32:41.944651 memdb@flush created L0@5 N·3 S·445B "Dat..ion,v623":"cli..\xfd[\xa7,v625"
+10:32:41.946209 version@stat F·[2] S·50KiB[50KiB] Sc·[0.50]
+10:32:41.947283 db@janitor F·4 G·0
+10:32:41.947316 db@open done T·6.629467ms
+10:47:12.004657 table@compaction L0·2 -> L1·0 S·50KiB Q·1420
+10:47:12.010395 table@build created L1@8 N·623 S·50KiB "\x02d\xfc..\x19Ba,v429":"\xfe\x88\xcf..H\xef\xcc,v362"
+10:47:12.010623 version@stat F·[0 1] S·50KiB[0B 50KiB] Sc·[0.00 0.00]
+10:47:12.010972 table@compaction committed F-1 S-412B Ke·0 D·1 T·5.714545ms
+10:47:12.011137 table@remove removed @5
+10:47:12.011279 table@remove removed @2
+11:01:34.456164 db@close closing
+11:01:34.456755 db@close done T·589.985µs
