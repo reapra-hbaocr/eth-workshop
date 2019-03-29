@@ -17,3 +17,4 @@ node generate_new_account.js
 cd ex1-faucet
 node index.js
 ```
+[Demo faucet link](http://18.136.237.172:9000/faucet.html)
