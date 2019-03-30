@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ethereum Betting DAPP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- web3 0.20.6
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+-->
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"
+        integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/abi-decoder@1.2.0/dist/abi-decoder.js"></script>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/dapp.js"></script>
+    <script src="/js/betting.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Ethereum Betting DAPP</h3>
+        <br />
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>Account Info</h4>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Blockchain Status</h4>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="well">
+                            Contract Account : <label id="txt_contract"> Not detect</label> <br />
+                            Balance(ETH) : <label id="txt_balance_contract"> Not detect</label> <br />
+                            Your Account : <label id="txt_yaddr"> Not detect</label> <br />
+                            Balance(ETH) : <label id="txt_ybalance"> Not detect</label> <br />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            API : <label id="txt_web3api"> Not detect</label> <br />
+                            NetworkID : <label id="txt_network"> Not detect</label> <br />
+                            NetworkType: <label id="txt_type"> Not detect</label> <br />
+                            BlockCount : <label id="txt_blocknum"> Not detect</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        Banker balance(ETH) : <label id="txtBanker"> Not detect</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-primary btn-xs btn-block" id="btnGetBankerBalance"
+                            data-loading-text="<i class='fa fa-spinner fa-spin'></i> Wait to be confirmed">
+                            GetBankerBalance
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        Player balance(ETH) : <label id="txtPlayer"> Not detect</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-primary btn-xs btn-block" id="btnGetPlayerBalance"
+                            data-loading-text="<i class='fa fa-spinner fa-spin'></i> Wait to be confirmed">
+                            GetPlayerBalance
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        Deposite Ether :
+                    </div>
+
+                    <div class="col-sm-2">
+                        <input id="txtDeposit" type="number" step="0.1" value="0.1" />
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-primary btn-xs btn-block" id="btnDeposit"
+                            data-loading-text="<i class='fa fa-spinner fa-spin'></i> Wait to be confirmed"> Deposite
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        Withdraw Ether :
+                    </div>
+                    <div class="col-sm-2">
+                        <input id="txtWithDraw" type="number" step="0.1" value="0.1" />
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-primary btn-xs btn-block" id="btnWithDraw"
+                            data-loading-text="<i class='fa fa-spinner fa-spin'></i> Wait to be confirmed"> Withdraw
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        Bet your Num 1-3 :
+                    </div>
+                    <div class="col-sm-2">
+                        <input id="txtBetNum" type="number" step="1" value="1" />
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        How much ETH :
+                    </div>
+                    <div class="col-sm-2">
+                        <input id="txtHowMuch" type="number" step="0.1" value="0.1" />
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-primary btn-xs btn-block" id="btnBet"
+                            data-loading-text="<i class='fa fa-spinner fa-spin'></i> Wait to be confirmed">
+                            BetYourNumber
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
