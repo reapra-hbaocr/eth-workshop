@@ -11,7 +11,6 @@ node index.js
 ```
 *  First, dealer should deposit ETH to  this smart contract  to pay for player incase they win the game
 *  Player should deposit ETH to this contract to play the game. If the win, they will win 3 times the fund they bet otherwise they lost the fund.
-
-
+* [Demo link](http://18.136.237.172:9001/betting.html)
 
 

@@ -14,6 +14,6 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));// parse application/x-www-form-urlencoded
 app.listen(app_port, bind_ip, function () {
-    console.log('Faucet app listening on ' + bind_ip + ':' + app_port);
+    console.log('Betting app listening on ' + bind_ip + ':' + app_port);
 });
 
